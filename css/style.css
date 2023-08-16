@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: hsl(0, 0%, 94%);
+	height: 50vh;
+	font-family: "Poppins", sans-serif;
+}
+/* Hidding arrow in input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Desktop Design */
+/* Container */
+.container {
+	width: 600px;
+	height: 480px;
+	padding: 20px 20px;
+	background-color: white;
+	margin: auto;
+	margin-top: 15vh;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 150px;
+}
+/* Each Box  */
+.box-container {
+	display: flex;
+	gap: 30px;
+	padding: 10px;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5px;
+}
+.box > label {
+	color: hsl(0, 1%, 44%);
+	letter-spacing: 2px;
+	font-size: 0.7rem;
+}
+.box > input {
+	width: 120px;
+	height: 50px;
+	padding: 15px;
+	margin-top: 7px;
+	color: hsl(0, 0%, 8%);
+	font-size: 1.6rem;
+	font-weight: 800;
+	border: solid 1px hsla(0, 1%, 44%, 0.405);
+	border-radius: 7px;
+	cursor: pointer;
+	font-family: "Poppins", sans-serif;
+}
+.box > input:focus {
+	border: solid 1px hsl(259, 100%, 65%);
+	outline: none;
+}
+/* Modal */
+.modal {
+	display: none;
+	margin-top: 5px;
+	font-size: 10px;
+	font-weight: 400;
+	font-style: italic;
+	color: hsl(0, 100%, 67%);
+}
+/* Separator */
+.separator {
+	margin: auto;
+	max-width: 540px;
+	display: flex;
+}
+.separator > hr {
+	margin: auto;
+	flex: 1;
+	height: 0;
+	opacity: 0.5;
+}
+.separator > button {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: hsl(259, 100%, 65%);
+	padding: 10px;
+	cursor: pointer;
+	border: none;
+}
+.separator > button:hover {
+	background-color: hsl(0, 0%, 8%);
+}
+/* Output */
+.date {
+	display: flex;
+	flex-direction: column;
+}
+.date > p {
+	line-height: 1.1;
+	margin-left: 10px;
+	font-weight: 800;
+	font-style: italic;
+	font-size: 4.6rem;
+	color: hsl(0, 0%, 8%);
+}
+.date > p > span {
+	color: hsl(259, 100%, 65%);
+}
+/* Footer */
+.attribution {
+	margin-top: 20px;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	text-decoration: none;
+}
+.attribution a:hover {
+	color: hsl(322, 47%, 41%);
+}
+/* Mobile design */
+@media only screen and (max-width: 375px) {
+	/* Body */
+	body {
+		height: 812px;
+	}
+	/* Container */
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 300px;
+		height: 400px;
+		padding: 0px;
+		margin: auto;
+		margin-top: 10vh;
+		border-bottom-right-radius: 80px;
+	}
+	/* Box Container */
+	.box-container {
+		display: flex;
+		gap: 15px;
+		padding: 0px;
+		justify-content: center;
+		align-items: center;
+	}
+	/* Each Box */
+	.box > label {
+		color: hsl(0, 1%, 44%);
+		letter-spacing: 2px;
+		font-size: 0.7rem;
+	}
+	.box > input {
+		width: 80px;
+		height: 50px;
+		padding: 15px;
+		margin-top: 7px;
+		color: black;
+		font-size: 1rem;
+	}
+	/* Modal */
+	.modal {
+		font-size: 7px;
+	}
+	/* separator */
+	.separator {
+		margin: 10px;
+		max-height: 100px;
+		max-width: 400px;
+	}
+	.separator > hr {
+		position: sticky;
+		top: 0;
+		margin-left: 50px;
+		width: 275px;
+	}
+	.separator > button {
+		width: 50px;
+		height: 50px;
+		position: relative;
+		right: 160px;
+	}
+	/* Output */
+	.date > p {
+		line-height: 1.1;
+		margin-left: 0px;
+		font-weight: 800;
+		font-style: italic;
+		font-size: 2.7rem;
+		color: hsl(0, 0%, 8%);
+		margin-right: 30px;
+	}
+	/* Footer */
+	.attribution {
+		margin-top: 20px;
+		font-size: 8px;
+		text-align: center;
+	}
+}

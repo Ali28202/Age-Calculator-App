@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="js/app.js" defer></script>
+		<title>Frontend Mentor | Age calculator app</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box-container">
+				<div class="box">
+					<label for="day">DAY</label>
+					<input type="number" name="day" id="day" placeholder="DD" />
+					<p class="modal" id="d-modal">This Field is required</p>
+				</div>
+				<div class="box">
+					<label for="month">MONTH</label>
+					<input type="number" name="month" id="month" placeholder="MM" />
+					<p class="modal" id="m-modal">This Field is required</p>
+				</div>
+				<div class="box">
+					<label for="year">YEAR</label>
+					<input type="number" name="year" id="year" placeholder="YYYY" />
+					<p class="modal" id="y-modal">This Field is required</p>
+				</div>
+			</div>
+			<div class="separator">
+				<hr />
+				<button>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="30"
+						height="30"
+						viewBox="0 0 46 44"
+					>
+						<g fill="none" stroke="#FFF" stroke-width="2">
+							<path
+								d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+							/>
+						</g>
+					</svg>
+				</button>
+			</div>
+			<div class="date">
+				<p><span>- -</span> years</p>
+				<p><span>- -</span> months</p>
+				<p><span>- -</span> days</p>
+			</div>
+		</div>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a href="https://github.com/Ali28202" target="_blank">Ali Mahallati</a>.
+		</div>
+	</body>
+</html>

@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ([https://your-solution-url.com](https://github.com/Ali28202/age-calculator-app-main))
+- Solution URL: (https://github.com/Ali28202/age-calculator-app-main)
 
 ## My process
 
